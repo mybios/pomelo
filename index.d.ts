@@ -1,5 +1,6 @@
 ﻿
 import { ChannelService } from "./ChannelService";
+import { rpc } from "../../src/common/protocol/rpc";
 
 /**
  * Application
@@ -462,7 +463,7 @@ export declare class Application
 	backendSessionService: BackendSessionService;
 	sessionService: SessionService;
 
-	rpc: any;
+	rpc: rpc;
 }
 
 /**
@@ -859,3 +860,4 @@ export interface ChannelServiceOption
 }
 
 export * from "./ChannelService"
+export * from "./AsyncChannelService"
